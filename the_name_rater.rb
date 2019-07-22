@@ -67,7 +67,7 @@ end
 # This just extracts the ID and name from the message with a regex,
 # and uses the current message's context to change a user's name
 $bot.mention do |event|
-  _, user_id, nick = event.message.text.match(/<@\d+>\s+<@!?(\d+)> (.*)/).to_a
+  _, user_id, nick = event.message.text.match(/<@!?\d+>\s+<@!?(\d+)> (.*)/).to_a
 
   member = event.server.members.find do |user|
     user.id == user_id.to_i
