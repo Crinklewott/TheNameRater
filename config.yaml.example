@@ -1,0 +1,4 @@
+---
+:token: <Your bot token here (Not the one at the top of the app page)>
+:client_id: <The client ID from the apps page>
+:server_id: <The ID of the server you wanna unleash this power upon>
